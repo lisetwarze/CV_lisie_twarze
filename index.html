@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lisie_twarze_CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<div class="background"></div>
+<div class="container">
+        <header>
+            <div>
+				<h1>Lisie Twarze</h1>
+				<span>Artysta wizualny</span>
+			</div>
+			<img class="profile-picture" alt="zdjęcie profilowe" src="lisie_twarze.jpg"/>
+			<adress>
+				<ul>
+				<li> <b>Kontakt:</b> <a href="tel:503-593-650">503-593-650</a></li>
+				<li> <b>Adres:</b> <a href="zytni53@gmail.com">zytni53@gmail.com</a></li>
+				<li> <b>Instagram:</b> <a href="@lisie_twarze">@lisie_twarze</a></li>	
+				<li> <b>Miejsce:</b> Warszawa</li>	
+				</ul>
+			</adress>
+		 </header>
+		 <main>
+			 <selection>
+				 <h2>Kim jestem:</h2>
+				 	<p>Jestem artystą wizualnym. Zajmuję się tworzeniem za pomocą czarnego atramentu. Ponadto zajmuję się również rysowaniem komiksów, między innymi tak zawanej mangi, wywodzącej się z kultury japońskiej.</p>
+			 </selection>
+		 </main>
+			<selction>
+				<h2>Doświadczenie:</h2>
+				<ul>
+                    <li>12.2023 <a>Wykonanie Concept Art'u do gry "Droga do szkoły"</a></li>
+                    <li>05.2024 <a>Wykoania komiksu tematycznego do gry "Droga do szkoły"</a></li>
+                    <li>od 2024 <a>Praca nad mangą do międzynarodowego konkursu </a></li>
+                </ul>
+			</selction>
+			<selection>
+				<h2>Umiejętności:</h2>
+					<div class="skill-bar">
+                    <div class="skill-bar-fill" data-percentage="90">Kompozycja</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" data-percentage="99">Anaomia</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" data-percentage="60">Pejzaż</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" data-percentage="95">Tusz</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" data-percentage="50">Kolor</div>
+                </div>
+            </selection>		
+			<section>
+                <h2>Języki</h2>
+                <ul>
+                    <li>Angielski - B2</li>
+                    <li>日本語 - Japoński - A2.2</li>
+                </ul>
+            </section>
+				<h2>Zainteresowania:</h2>
+				<p>Moje zaintersowania w największej mierze koncentrują się wokół wspomnianej powyżej japońskiej kultury. Twórzczość zajmuje mi sporą część wolnego czasu, niemniej czytuję również książki z zakresu filozofii. Często bywam w środowisku artystycznym, w tym w różnego rodzaju galeriach. Na koniec wspomnę, że zajmuję się też fotografią analogową.</p>
+		</div>
+	 <script>
+        window.addEventListener('scroll', function () {
+            const skillBars = document.querySelectorAll('.skill-bar-fill');
+            skillBars.forEach(skillBar => {
+                const percentage = skillBar.getAttribute('data-percentage');
+                skillBar.style.width = percentage + '%';
+            });
+        });
+		
+	 </script>
+	</body>
+</html>
